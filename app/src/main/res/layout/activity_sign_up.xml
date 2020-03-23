@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="60dp"
+    tools:context=".SignUpActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/ham"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:text="Imstargram"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="이메일을 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10sp"
+        android:inputType="textPersonName"
+        android:id="@+id/sign_user_email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="이름을 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10sp"
+        android:inputType="textPersonName"
+        android:id="@+id/sign_user_name"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="비밀번호를 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10sp"
+        android:inputType="textPassword"
+        android:id="@+id/sign_user_password"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="비밀번호를 다시 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10sp"
+        android:inputType="textPassword"
+        android:id="@+id/sign_user_password_confirm"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sign_up_btn"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sign_login_btn"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+
+            <!-- 상단-->
+            <LinearLayout
+                android:id="@+id/upper_part_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+                <!--프로필 이미지 레이아웃 -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="25">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_profile" />
+
+
+                </RelativeLayout>
+                <!-- 프로필 이미지 레이아웃 끝-->
+
+
+                <!-- 게시물, 팔로잉, 팔로워, 프로필 수정-->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="75"
+                    tools:ignore="Suspicious0dp">
+
+                    <include layout="@layout/upper_part_snippet" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!--            닉네임, 하고싶은 말 적는곳-->
+            <LinearLayout
+                android:id="@+id/middle_part_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upper_part_layout"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <!--                이름 or 닉네임-->
+                <TextView
+                    android:id="@+id/display_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!--                하고싶은 말-->
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Description"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+            <!--End of Middle Part Layout-->
+
+
+            <!-- Lower Part Layout-->
+            <!--            post 올린거 보여줄 곳-->
+            <RelativeLayout
+                android:id="@+id/lower_part_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/middle_part_layout"
+                android:layout_marginBottom="1dp">
+
+
+                <GridView
+                    android:id="@+id/images_grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+
+
+                    />
+
+
+            </RelativeLayout>
+            <!---End of Lower Part-->
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</merge>

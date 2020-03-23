@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="60dp"
+    tools:context=".LoginActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/loveham1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:text="Imstargram"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="아이디를 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10sp"
+        android:inputType="textPersonName"
+        android:id="@+id/login_user_email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="비밀번호를 입력하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10sp"
+        android:inputType="textPassword"
+        android:id="@+id/login_user_password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_login"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_sign_up"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="비밀번호 찾기"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/forgot_pass"
+        />
+
+
+
+</LinearLayout>
