@@ -23,6 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".StroyActivity"></activity>
+        <activity android:name=".ProfileEditActivity" />
         <activity android:name=".CommentsActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".ProfileActivity" />

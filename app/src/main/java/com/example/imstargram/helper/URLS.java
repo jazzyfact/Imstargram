@@ -23,7 +23,11 @@ public class URLS {
     //유저 정보 가져오기
     public static final String get_user_data = "http://13.125.252.78/imstargram/get_user_data.php?user_id=";
 
+    //유저 검색하기
     public static final String get_similar_users = "http://13.125.252.78/imstargram/get_similar_users.php?text=";
+
+
+
     public static final String get_all_images = "http://13.125.252.78/imstargram/get_all_images.php?id=";
     public static final String update_profile_image = "http://13.125.252.78/imstargram/update_profile_image.php";
     public static final String update_user_data = "http://13.125.252.78/imstargram/update_user_data.php";

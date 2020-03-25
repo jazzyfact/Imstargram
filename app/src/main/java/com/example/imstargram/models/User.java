@@ -2,27 +2,40 @@ package com.example.imstargram.models;
 
 public class User {
 
-    int id,following,followers,posts;
-    String email,username,image;
+    int id, following, followers, posts;
+    String email;
+    String username;
+    String image;
+//    String intro;
 
 
-    public User(int id,String email, String username,String image) {
+    public User(int id, String email, String username, String image) {
         this.id = id;
         this.email = email;
         this.username = username;
         this.image = image;
+
     }
 
 
-    public User(int id,String email, String username,String image,int following,int followers,int posts) {
+    public User(int id, String email, String username, String image, int following, int followers, int posts) {
         this.id = id;
         this.email = email;
         this.username = username;
         this.image = image;
+
         this.following = following;
         this.followers = followers;
         this.posts = posts;
     }
+
+//    public String getIntro() {
+//        return intro;
+//    }
+//
+//    public void setIntro(String intro) {
+//        this.intro = intro;
+//    }
 
     public int getFollowing() {
         return following;

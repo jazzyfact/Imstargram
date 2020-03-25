@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else if (menuItem == R.id.search) {
 
-            fragment = new SearchFragment();
+            startActivity(new Intent(MainActivity.this,SearchActivity.class));
             Toast.makeText(MainActivity.this, "검색", Toast.LENGTH_LONG).show();
 
         } else if (menuItem == R.id.camera) {

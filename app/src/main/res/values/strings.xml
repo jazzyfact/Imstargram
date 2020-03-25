@@ -14,14 +14,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<!--    <string name="title_activity_main2">Main2Activity</string>-->
-<!--    <string name="title_home" tools:ignore="ExtraTranslation">Home</string>-->
-<!--    <string name="title_serach">Search</string>-->
-<!--    <string name="title_camera">Camera</string>-->
-<!--    <string name="title_likes">Likes</string>-->
-<!--    <string name="title_profile">Profile</string>-->
-<!--    <string name="title_logout">Log Out</string>-->
-
+    <!--    <string name="title_activity_main2">Main2Activity</string>-->
+    <!--    <string name="title_home" tools:ignore="ExtraTranslation">Home</string>-->
+    <!--    <string name="title_serach">Search</string>-->
+    <!--    <string name="title_camera">Camera</string>-->
+    <!--    <string name="title_likes">Likes</string>-->
+    <!--    <string name="title_profile">Profile</string>-->
+    <!--    <string name="title_logout">Log Out</string>-->
 
 
 </resources>

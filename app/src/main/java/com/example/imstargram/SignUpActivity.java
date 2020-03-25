@@ -148,11 +148,13 @@ public class SignUpActivity extends AppCompatActivity {
                                 JSONObject jsonObjectUser =  jsonObject.getJSONObject("user");
 
                                 User user = new User(jsonObjectUser.getInt("id"),jsonObjectUser.getString("email"),jsonObjectUser.getString("username")
-                                        ,jsonObjectUser.getString("image"));
+                                        ,jsonObjectUser.getString("image")) ;
 
                                 Log.d("보낸다", "유저" + user);
                                 Log.d("보낸다", "이ㅁㄹ" + user.getEmail());
                                 Log.d("보낸다", "이름" + user.getUsername());
+//                                Log.d("보낸다", "소개" + user.getIntro());
+
 
 
                                 //store user data inside sharedprefrences

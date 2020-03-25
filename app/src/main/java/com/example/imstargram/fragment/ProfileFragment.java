@@ -78,7 +78,7 @@ public class ProfileFragment extends Fragment {
         ivUserProfileImage = (CircleImageView) view.findViewById(R.id.profile_image);
         imagesGridLayout = (GridView) view.findViewById(R.id.images_grid_layout);
 
-        tvProfileBtn.setText("Edit Profile");
+        tvProfileBtn.setText("프로필 수정");
 
         //로그인한 유저 닉넴
         user = SharedPrefrenceManger.getInstance(getContext()).getUserData();

@@ -9,16 +9,17 @@ import com.example.imstargram.models.User;
 
 public class SharedPrefrenceManger {
 
-    private  static final String FILENAME = "LOGIN";
-    private  static final String USERNAME = "username";
-    private  static final String EMAIL = "useremail";
+    private static final String FILENAME = "LOGIN";
+    private static final String USERNAME = "username";
+    private static final String EMAIL = "useremail";
     private static final String IMAGE = "image";
-    private  static final String ID = "id";
+//    private static final String INTRO = "intro";
+    private static final String ID = "id";
 
     private static SharedPrefrenceManger sharedPrefrenceManger;
     private Context context;
 
-    private SharedPrefrenceManger(Context context){
+    private SharedPrefrenceManger(Context context) {
         this.context = context;
     }
 
@@ -32,43 +33,42 @@ public class SharedPrefrenceManger {
     }
 
 
-
-    public void updateProfileImage(String imageUrl){
+    public void updateProfileImage(String imageUrl) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(IMAGE,imageUrl);
+        editor.putString(IMAGE, imageUrl);
         editor.apply();
 
     }
 
-    public void updateEmail(String email){
+    public void updateEmail(String email) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(EMAIL,email);
+        editor.putString(EMAIL, email);
         editor.apply();
 
     }
 
 
-    public void storeUserData(User user){
+    public void storeUserData(User user) {
 
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(USERNAME, user.getUsername());
         editor.putString(EMAIL, user.getEmail());
         editor.putString(IMAGE, user.getImage());
+//        editor.putString(INTRO, user.getIntro());
         editor.putInt(ID, user.getId());
         editor.apply();
 
     }
 
 
-
     //자동로그인
-    public boolean isUserLogggedIn(){
+    public boolean isUserLogggedIn() {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
 
-        if(sharedPreferences.getString(EMAIL,null) != null){
+        if (sharedPreferences.getString(EMAIL, null) != null) {
             return true;
         }
 
@@ -77,7 +77,7 @@ public class SharedPrefrenceManger {
 
 
     //로그아웃
-    public void logUserOut(){
+    public void logUserOut() {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
@@ -86,18 +86,15 @@ public class SharedPrefrenceManger {
     }
 
 
-    public User getUserData(){
+    public User getUserData() {
         SharedPreferences sharedPreferences = context.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
-        User user = new User(sharedPreferences.getInt(ID,-1),sharedPreferences.getString(EMAIL,null)
-                ,sharedPreferences.getString(USERNAME,null),sharedPreferences.getString(IMAGE,null));
+        User user = new User(sharedPreferences.getInt(ID, -1), sharedPreferences.getString(EMAIL, null)
+                , sharedPreferences.getString(USERNAME, null), sharedPreferences.getString(IMAGE, null));
         return user;
     }
 
 
-
-
-
-
-
-
 }
+
+
+

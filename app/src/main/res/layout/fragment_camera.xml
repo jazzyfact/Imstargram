@@ -9,45 +9,32 @@
     <ImageView
         android:id="@+id/captured_iv"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="436dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_camera" />
 
-    <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal"
-      android:layout_gravity="center">
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"
-          android:text="사진"
-          android:background="@color/colorAccent"
-          android:textColor="@color/colorBlack"
-          android:padding="5dp"
-          android:layout_margin="5dp"
-          android:id="@+id/capute_btn"
-          />
+    <EditText
+        android:id="@+id/et_camera_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
 
-      <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"
-          android:text="업로드"
-          android:background="@color/colorAccent"
-          android:textColor="@color/colorBlack"
-          android:padding="5dp"
-          android:layout_margin="5dp"
-          android:id="@+id/upload_btn"
-          />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="업로드"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBlack"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/upload_btn"
+        />
 
 
-
-  </LinearLayout>
-
-<!--사진찍기, 업로드 사이즈-->
+    <!--사진찍기, 업로드 사이즈-->
 
 </LinearLayout>

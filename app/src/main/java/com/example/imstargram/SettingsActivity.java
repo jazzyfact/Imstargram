@@ -40,6 +40,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class SettingsActivity extends AppCompatActivity {
 
+
+    private static final String TAG = "SettingsActivity";
+
+
     TextView tvEditImageBtn, btnDoneEdit;
     EditText etUserName, etDesc, etEmail;
     CircleImageView ivProfileImage;
@@ -91,6 +95,7 @@ public class SettingsActivity extends AppCompatActivity {
         String username = getIntent().getStringExtra("username");
         String imageProfile = getIntent().getStringExtra("imageProfile");
         String email = getIntent().getStringExtra("email");
+        String intro = getIntent().getStringExtra("intro");
 
         if (!username.isEmpty()) {
             etUserName.setText(username);
@@ -104,6 +109,17 @@ public class SettingsActivity extends AppCompatActivity {
             etEmail.setText(email);
         }
 
+
+
+
+        //뒤로가기
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: navigating back to 'ProfileActivity'");
+                finish();
+            }
+        });
 
     }
 

@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.ParseException;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -51,6 +52,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.TimeZone;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -58,6 +60,7 @@ import static android.app.Activity.RESULT_OK;
 public class CameraFragment extends Fragment {
 
     Button btnUpload, btnCapture;
+    EditText etCameraTitle;
     ImageView ivImageView;
     Uri mImageUri;
     final int CAPTURE_IMAGE = 1, GALLARY_PICK = 2;
@@ -85,6 +88,7 @@ public class CameraFragment extends Fragment {
         btnUpload = (Button) view.findViewById(R.id.upload_btn);
        // btnCapture = (Button) view.findViewById(R.id.capute_btn);
         ivImageView = (ImageView) view.findViewById(R.id.captured_iv);
+        etCameraTitle = view.findViewById(R.id.et_camera_title);
 
         OkToUpload = false;
 
@@ -217,41 +221,53 @@ public class CameraFragment extends Fragment {
 
     private void storyAndImageTitle() {
 
-        final EditText editText = new EditText(getContext());
-        editText.setTextColor(Color.BLACK);
-        editText.setHint("게시물 내용을 작성해주세요");
-        editText.setHintTextColor(Color.GRAY);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setTitle("게시물 제목");
-        builder.setCancelable(false);
-        builder.setView(editText);
-
-        builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
+        if (OkToUpload) {
+            strStoryTitle = etCameraTitle.getText().toString();
+            imageToString = convertImageToString();
+            uploadStory();
+        } else {
+            Toast.makeText(getContext(), "사진을 먼저 선택해주세요", Toast.LENGTH_LONG).show();
+        }
 
 
-                if (OkToUpload) {
-                    strStoryTitle = editText.getText().toString();
-                    imageToString = convertImageToString();
-                    uploadStory();
-                } else {
-                    Toast.makeText(getContext(), "사진을 먼저 선택해주세요", Toast.LENGTH_LONG).show();
-                }
 
 
-            }
-        });
-
-        builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        builder.show();
+//        final EditText editText = new EditText(getContext());
+//        editText.setTextColor(Color.BLACK);
+//        editText.setHint("게시물 내용을 작성해주세요");
+//        editText.setHintTextColor(Color.GRAY);
+//
+//        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+//        builder.setTitle("게시물 제목");
+//        builder.setCancelable(false);
+//        builder.setView(editText);
+//
+//        builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//
+//
+//                if (OkToUpload) {
+//                    strStoryTitle = editText.getText().toString();
+//                    imageToString = convertImageToString();
+//                    uploadStory();
+//                } else {
+//                    Toast.makeText(getContext(), "사진을 먼저 선택해주세요", Toast.LENGTH_LONG).show();
+//                }
+//
+//
+//            }
+//        });
+//
+//        builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                dialog.dismiss();
+//            }
+//        });
+//
+//        builder.show();
 
 
     }
@@ -449,6 +465,20 @@ public class CameraFragment extends Fragment {
         Log.d("사진", "사진" + date.toString());
 
         return date.toString();
+
+
+//        String differnece = "";
+//        Calendar c = Calendar.getInstance();
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:zz'Z'", Locale.KOREA);
+//        sdf.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"));
+//        final String phototimestamp =
+//        try {
+//            timestamp =sdf.parse()
+//
+//        } catch (ParseException e) {
+//            differnece = "0";
+//        }
+//        return differnece;
 
 //        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 //        Log.d("사진", "사진" + timestamp.toString());
