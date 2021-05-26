@@ -1,7 +1,6 @@
 # 👏Imstagram(임스타그램)(Android)
 
 
-
 유명 소셜 네트워크 서비스인 **인스타그램**을 오마쥬 해서 만들었습니다.
 
 제 이름의 성인 **임**을 따와서 **임스타그램**이라고 지었고,  일상을 올리고 다른 사람들과 소통을 할 수 있는 어플리케이션입니다.
@@ -20,7 +19,7 @@
 
 **Video** : [https://youtu.be/ffJyMTkSMxM](https://youtu.be/ffJyMTkSMxM)
 
-![ALWAYSHHIPHOP](https://user-images.githubusercontent.com/51365114/119621390-06baf700-be41-11eb-9879-66ba9c156c33.png)
+
 
 ## 기능
 - **로그인, 회원가입, 로그아웃**
@@ -38,31 +37,32 @@
 
 - **회원가입 및 로그인을 할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab2ee561-5fb1-4b46-824c-38a6246481f2/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab2ee561-5fb1-4b46-824c-38a6246481f2/.png)
+![image](https://user-images.githubusercontent.com/51365114/119623197-e55b0a80-be42-11eb-8192-a7bbe0009ffb.png)
+
 
 - **프로필을 확인하고 프로필 이미지를 수정할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5288c13c-e7bf-4805-865a-38affbbbc97a/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5288c13c-e7bf-4805-865a-38affbbbc97a/.png)
+    ![image](https://user-images.githubusercontent.com/51365114/119623246-f3a92680-be42-11eb-8947-f00e952b5a9b.png)
 
 - **게시물을 등록하고 수정 및 삭제할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca4549c4-6fd0-4417-8f64-2e31c4c1b254/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca4549c4-6fd0-4417-8f64-2e31c4c1b254/.png)
+    ![image](https://user-images.githubusercontent.com/51365114/119623308-002d7f00-be43-11eb-8935-508bdd2323e0.png)
 
 - **댓글을 작성하고 수정,삭제할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53ec5ea1-e16e-4a20-97a6-1c19925194e0/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53ec5ea1-e16e-4a20-97a6-1c19925194e0/.png)
+    ![image](https://user-images.githubusercontent.com/51365114/119623338-0885ba00-be43-11eb-93fe-25d95e36e159.png)
 
 - **사용자를 검색하고 팔로우 추가 및 취소할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfac46a9-f5b8-4e96-8fb3-e339839453da/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfac46a9-f5b8-4e96-8fb3-e339839453da/.png)
+    ![image](https://user-images.githubusercontent.com/51365114/119623361-0e7b9b00-be43-11eb-9bdd-b87ded0bfff4.png)
 
 - **마음에 드는 게시물을 북마크,좋아요 등록하고 취소할 수 있습니다.**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7992f3ee-8282-4439-8882-78b09bc60fd3/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7992f3ee-8282-4439-8882-78b09bc60fd3/.png)
+   ![image](https://user-images.githubusercontent.com/51365114/119623384-13d8e580-be43-11eb-8df9-b37e84e7f13e.png)
 
 - **TCP/IP 1:1일 채팅(사용자들과 일대일 채팅을 할 수 있습니다.)**
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fcb0e506-4022-47d1-a214-725a5810d362/TCP.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fcb0e506-4022-47d1-a214-725a5810d362/TCP.png)
+    ![image](https://user-images.githubusercontent.com/51365114/119623414-1b988a00-be43-11eb-8734-2a3ffb351d48.png)
 
 ## 🛠️사용기술
 **서버** : AWS EC2 , Apache, Ubuntu
