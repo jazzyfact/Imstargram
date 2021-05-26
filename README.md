@@ -20,7 +20,7 @@
 
 **Video** : [https://youtu.be/ffJyMTkSMxM](https://youtu.be/ffJyMTkSMxM)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/088d9c01-411f-4d33-a6ad-a89fb21df0dd/.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/088d9c01-411f-4d33-a6ad-a89fb21df0dd/.jpg)
+![ALWAYSHHIPHOP](https://user-images.githubusercontent.com/51365114/119621390-06baf700-be41-11eb-9879-66ba9c156c33.png)
 
 ## 기능
 - **로그인, 회원가입, 로그아웃**
