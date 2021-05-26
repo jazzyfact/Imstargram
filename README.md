@@ -66,11 +66,17 @@
 
 ## 🛠️사용기술
 **서버** : AWS EC2 , Apache, Ubuntu
+
 **언어** :  JAVA, PHP 7
+
 **프로토콜** : HTTP, TCP/IP
+
 **데이터베이스** : MySQL
+
 **구조** : Singleton 패턴
+
 **IDE** : Android Studio, Phpstorm, IntelliJ
+
 **라이브러리** : Volley, Retrofit2, tedpermission, glide, gson, circleimageview
 
 
