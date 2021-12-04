@@ -5,21 +5,24 @@
 
 제 이름의 성인 **임**을 따와서 **임스타그램**이라고 지었고,  일상을 올리고 다른 사람들과 소통을 할 수 있는 어플리케이션입니다.
 
-**개발기간** 
+<br/><br/>
+##개발기간 
 
 **16주**
 
-**담당업무** 
+##담당업무 
 
 **1인 개인프로젝트**
 
 **클라이언트 + 백엔드 (기여도 100%)**
 
-**Github** :  [https://github.com/jazzyfact/Imstargram](https://github.com/jazzyfact/Imstargram)
-
-**Video** : [https://youtu.be/ffJyMTkSMxM](https://youtu.be/ffJyMTkSMxM)
 
 
+**시연영상** 
+
+[![Video Label](http://img.youtube.com/vi/ffJyMTkSMxM/0.jpg)](https://www.youtube.com/ffJyMTkSMxM)
+
+<br/><br/>
 
 ## 기능
 - **로그인, 회원가입, 로그아웃**
@@ -32,7 +35,7 @@
 - **내가 올린 포스팅 목록 보기**
 - **TCP 1:1 채팅**
 
-
+<br/><br/>
 ## 💻상세내용
 
 - **회원가입 및 로그인을 할 수 있습니다.**
@@ -63,6 +66,8 @@
 - **TCP/IP 1:1일 채팅(사용자들과 일대일 채팅을 할 수 있습니다.)**
 
     ![image](https://user-images.githubusercontent.com/51365114/119623414-1b988a00-be43-11eb-8734-2a3ffb351d48.png)
+    
+    <br/><br/>
 
 ## 🛠️사용기술
 **서버** : AWS EC2 , Apache, Ubuntu
@@ -78,7 +83,7 @@
 **IDE** : Android Studio, Phpstorm, IntelliJ
 
 **라이브러리** : Volley, Retrofit2, tedpermission, glide, gson, circleimageview
-
+<br/><br/>
 
 ## 💡프로젝트 회고록
 - **HTTP 통신 라이브러리를 통해 좀 더 편하게 서버와 통신하는 방법을 배웠음.**
